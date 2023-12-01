@@ -1,10 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Montserrat';
 }
 header{
-    /*LEMBRAR DE POR UMA IMAGEM DE NUVEM NO BACKGROUND*/
     display: flex;
     justify-content: space-between;
     background-color: #FFF;
@@ -70,19 +69,29 @@ header{
  .textContent{
     
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 30px;
     text-align: center;
  }
- @media(max-width:514px){
+ @media(max-width:555px){
+    .botoes{
+        font-size: 1.1rem;
+    }
+    .port{
+        font-size: 1.1rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 1rem;
+    }
   
 }
-.botoes{
-    font-size: 1.3rem;
-}
-.port{
-    font-size: 1.3rem;
-}
+
+
+
 @media(max-width:491px){
     .botoes{
         font-size: 0.8rem;
@@ -93,12 +102,29 @@ header{
 }
 
 }
-@media(max-width:415px){
+@media(max-width:425px){
     .ft-contato{
         width: 200px;
 
     }
+    h2{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 1rem;
+    }
 }
+@media(max-width:375px){
+    .botoes{
+        font-size: 0.7rem;
+    }
+    .port{
+        font-size: 0.7rem;
+    }
+}
+
+
+
 @media(max-width:342px){
    
     header{
@@ -106,14 +132,26 @@ header{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-       
-        
     }
+    h2{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+
 }
 @media(max-width:276px){
     .ft-contato{
         width: 150px;
     }
+    h2{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+
 }
 
  
