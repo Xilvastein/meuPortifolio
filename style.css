@@ -52,29 +52,20 @@ header{
     text-decoration-thickness: 3px;
 }
 
-main{
+.container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 7rem;
+    margin-top: 200px;
     background-color: white;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-
 }
 .foto{
     width: 400px;
-    height: 650px;
+    height: 500px;
     background-color:  #c2e0f6;
-    border-radius: 120px;
-    border-top-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    
+    border-radius: 7px;
 }
 
-.fotoDiv{
-border-radius: 30px;
-}
 .sectionContent{
     font-size: 2.5rem;
     padding-right: 25rem;
@@ -91,67 +82,101 @@ border-radius: 30px;
     color: #000;
 }
 
-
-
-@media(max-width:1077px){
-    .foto{
-        width: 300px;
-        height: 405px;
-    }
+@media(max-width:1505px){
     .sectionContent{
+       width: 100px;
+   }
+   .itemContent{
+       width: 250px;
+       font-size: 2rem;
+   }
+}
+@media(max-width:1260px){
+    .itemContent{
         font-size: 2rem;
-    }
-}
-@media(max-width:909px){
-    .section{
-        width: 50%;
-    }
-
-}
-@media(max-width:653px){
+    }   
+} 
+@media(max-width:1028px){
     .foto{
-        width: 150%;
-    
-        
+        width: 100%;
     }
     .sectionContent{
-        width: 120%;
         font-size: 1rem;
     }
-    .btnContact{
-        font-size: 1rem;
+}
+@media(max-width:730px){
+    .container{
+        margin-top: 0;
     }
-    .botoes{
-        font-size: 0.8rem;
+    .itemContent{
+        margin-left: 60px      
+    }
+    .foto{
+        margin-top: 25px;
+        width: 80%;
+    }   
+}
+@media(max-width:566px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;       
     }
     .port{
-        font-size: 0.8rem;
+        padding-bottom: 15px;      
     }
-    .section{
-        flex-wrap: wrap;
+    .foto{
+        height: 300px;
+        margin-left: 30px;
+    }
+    .itemContent{
+       margin-left: 126px;
+       font-size: 1.5rem;
+    }
+}
+@media(max-width:425px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;          
+    }
+    .botoes{
+        font-size: 1rem;
 
     }
-    @media(max-width:495px){
-        .section{
-
-            width: 200px;
-            height: 450px;
-        }
-        header{
-            font-size: 2rem;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-           
+    .port{
+        padding-bottom: 15px;
             
-        }
-        .port{
-            padding-bottom: 15px;
-        }     
     }
-    
-    }  
+    .foto{
+        height: 300px;
+        margin-left: 30px;
+    }
+    .itemContent{
+        margin-left: 126px;
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:365px){
+    .botoes{
+        font-size: 0.9rem;
 
-   
+    }
+    .port{
+        font-size: 1rem;
+        padding-bottom: 15px;
+                
+    }
+    .foto{
     
+        margin-left: 40px;
+    }
+    .itemContent{
+        margin-left: 130px;
         
+    }
+    Header{
+        margin-left: 45px;
+       
+    }  
+}
